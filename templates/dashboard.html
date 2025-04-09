@@ -1,0 +1,22 @@
+"""
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+  <h1>Welcome, {{ current_user.username }}</h1>
+  {% if current_user.role == 'employer' %}
+    <a href="/post_job">Post a New Job</a><br>
+    <h2>Your Job Listings:</h2>
+    {% for job in jobs %}
+      <p>{{ job.title }} - {{ job.company }}</p>
+    {% endfor %}
+  {% elif current_user.role == 'jobseeker' %}
+    <h2>Your Applications:</h2>
+    {% for app in applications %}
+      <p>Applied to Job ID: {{ app.job_id }}</p>
+    {% endfor %}
+  {% endif %}
+  <a href="/logout">Logout</a>
+</body>
+</html>
+"""
