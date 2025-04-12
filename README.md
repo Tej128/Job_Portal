@@ -1,34 +1,52 @@
-# 💼 Job Portal Web App
+# 💼 Job Portal Web Application
 
-A simple and fully functional Job Portal built with **Flask**, **SQLite**, **Bootstrap**, and **Flask-Login**. This platform allows users to register as **Job Seekers** or **Employers**, apply for jobs, and manage job listings with role-based access.
-
----
-
-## 🚀 Features
-
-### ✅ User Roles
-- **Job Seekers**: Register, search jobs, apply for jobs
-- **Employers**: Register, post jobs, manage listings
-- **Admin**: (Extendable) Manage users and job posts
-
-### 🔍 Core Functionalities
-- User registration & login (role-based)
-- Job posting with title, description, salary, location, and company
-- Job search and listings
-- Users can apply to jobs
-- Dashboard for each user type
-- Secure session management using Flask-Login
+A full-featured Job Portal built using **Flask** and **SQLite**, designed with role-based access for Job Seekers and Employers. This web app allows users to post, apply, and manage job listings with a clean, responsive UI powered by Bootstrap.
 
 ---
 
-## 🛠️ Tech Stack
+## 🌟 Features
 
-| Layer      | Technology           |
-|------------|----------------------|
-| Backend    | Python, Flask        |
-| Frontend   | HTML, CSS, Bootstrap |
-| Database   | SQLite (via SQLAlchemy) |
-| Auth       | Flask-Login          |
+- 👤 **User Roles**  
+  - Job Seekers: Register, browse jobs, apply to postings  
+  - Employers: Register, post jobs, manage listings  
+  - (Optional) Admin: Extendable for admin management of users/posts
+
+- 🔐 **Secure Authentication**  
+  - Role-based login system using **Flask-Login**  
+  - Session handling and access protection
+
+- 🧭 **Core Functionalities**
+  - User registration and login
+  - Job listing with filters (title, location, company)
+  - Application tracking
+  - Dashboards for different user roles
 
 ---
 
+## 🧰 Tech Stack
+
+| Layer     | Tools                            |
+|-----------|----------------------------------|
+| Backend   | Python, Flask, Flask-Login       |
+| Frontend  | HTML, CSS, Bootstrap             |
+| Database  | SQLite with SQLAlchemy ORM       |
+| Auth      | Flask-Login                      |
+
+---
+
+## 🚀 Getting Started
+
+### 🔧 Prerequisites
+- Python 3.8+
+- Virtualenv (recommended)
+
+### ⚙️ Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Tej128/Job_Portal.git
+cd Job_Portal
+
+# 2. Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
